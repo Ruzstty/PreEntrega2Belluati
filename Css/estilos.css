@@ -67,7 +67,7 @@
     align-items: center;
     display: flex;
     padding: 50px;
-    min-width: 500px;
+    min-width: 300px;
     display: flex;
     justify-content: space-between;
 }
