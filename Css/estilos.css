@@ -7,10 +7,11 @@
 
 .contenedors {
     background-color: #24303c;
-    width: 50%;
+    height: f;
+    max-width: fit-content;
     padding: 5%;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 5%;
     border-radius: 4px;
     font-family: 'Roboto', sans-serif;
     color: white;
@@ -19,7 +20,7 @@
 
 .contenedors h1 {
     font-size: 150%;
-    margin-top: 1em;
+    margin-top: 0;
     margin-bottom: 1em;
     text-align: center;
     text-transform: uppercase;
