@@ -545,53 +545,66 @@ a:visited {
 
 
 .center{
+    position: relative;
     display: flex;
-    text-align:center;
-    justify-content:center;
-    align-items:center;
-    min-height: 10vh;
-  }
-  .ring{
-    position:absolute;
-    width: 150px;
-    height: 150px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.ring{
+    width: 200px;
+    height: 200px;
+    border:  0px solid #011015;
     border-radius: 50%;
-    animation: ring 2s linear infinite;
-  }
-  @keyframes ring {
-    0%{
-      transform: rotate(0deg);
-      box-shadow: 1px 5px 2px #e65c00;
-    }
-    50%{
-      transform: rotate(180deg);
-      box-shadow: 1px 5px 2px #18b201;
-    }
-    100%{
-      transform: rotate(360deg);
-      box-shadow: 1px 5px 2px #0456c8;
-    }
-  }
-  .ring:before{
     position: absolute;
-    content: '';
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    box-shadow: 0 0 5px rgba(255,255,255,.3);
-  }
-  span{
-    color: #737373;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    line-height: 200px;
-    animation: text 3s ease-in-out infinite;
-  }
-  @keyframes text {
-    50%{
-      color: black;
+}
+  
+.ring:nth-child(1){
+    border-bottom-width: 8px ;
+    border-color: rgb(225,  0, 225);
+    animation: rotate1 2s linear infinite;
+}
+
+.ring:nth-child(2){
+    border-right-width: 8px ;
+    border-color: rgb(0,  247, 225);
+    animation: rotate2 2s linear infinite;
+}
+
+.ring:nth-child(3){
+    border-right-width: 8px ;
+    border-color: rgb(0,  255, 13);
+    animation: rotate3 2s linear infinite;
+}
+@keyframes rotate1 {
+    0%{
+        transform: rotateX(35deg) rotateY( -45deg) rotateZ( 0deg);
     }
-  }
+    100% {
+        transform: rotateX(35deg) rotateY( -45deg) rotateZ( 360deg);
+
+    }
+
+}
+@keyframes rotate2 {
+    0%{
+        transform: rotateX(50deg) rotateY( 10deg) rotateZ( 0deg);
+    }
+    100% {
+        transform: rotateX(50deg) rotateY( 10deg) rotateZ( 360deg);
+
+    }
+
+}
+@keyframes rotate3 {
+    0%{
+        transform: rotateX(35deg) rotateY( 55deg) rotateZ( 0deg);
+    }
+    100% {
+        transform: rotateX(35deg) rotateY( 55deg) rotateZ( 360deg);
+
+    }
+
+}
