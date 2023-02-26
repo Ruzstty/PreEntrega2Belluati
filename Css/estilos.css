@@ -5,10 +5,10 @@
     display: none;
 }
 
-html{
+html {
     box-sizing: border-box;
     margin: 0;
-    padding: 0 ;
+    padding: 0;
     overflow: scroll;
 }
 
@@ -195,22 +195,27 @@ img .centrado {
 
 
 .list-style {
+
+    text-align: start;
     box-sizing: content-box;
-    margin: 40px;
+    margin: 2em;
     list-style: none;
-    
+
 }
+
 div .subrayado {
+
     width: 90%;
     box-sizing: content-box;
     text-align: center;
     margin-left: auto;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
-    box-shadow: 3px 3px 3px ;
+    box-shadow: 3px 3px 3px;
     text-decoration: underline;
 }
-p{
+
+p {
     text-transform: uppercase;
     width: 100%;
     height: auto;
@@ -220,14 +225,17 @@ p{
 
 
 .textsam1 {
+    align-items: center;
+    text-decoration: solid;
     text-align: center;
     height: 40%;
 }
 
-.reflexion{
+.reflexion {
     color: rgb(39, 65, 40);
     text-transform: uppercase;
 }
+
 .om {
     color: #4c3f8e;
     box-shadow: 0px 6px 2px;
@@ -255,6 +263,7 @@ p{
 }
 
 .sam {
+    box-shadow: 0px 4px 2px rgba(8, 191, 236, 0.911);
     margin: 0;
     padding: 0;
     text-align: center;
@@ -321,14 +330,17 @@ ul li a:hover {
     margin-left: 30%;
     border: 3px solid blue;
 }
+
 /*Footer*/
 .copy {
     padding-top: 60px;
     text-align: center;
 }
-.copy1{
-color: chartreuse; 
+
+.copy1 {
+    color: chartreuse;
 }
+
 /*Footer*/
 a:link {
     text-decoration: none;
@@ -575,8 +587,8 @@ a:visited {
 
 @media (min-width:200px) {
     .backpage {
-         background: rgb(103, 199, 202);
-         overflow: hidden;
+        background: rgb(103, 199, 202);
+        overflow: hidden;
     }
 }
 
