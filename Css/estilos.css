@@ -5,6 +5,14 @@
     display: none;
 }
 
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 ;
+    overflow: scroll;
+}
+
+
 .contenedors {
     background-color: #24303c;
     height: 30%;
@@ -120,11 +128,7 @@ input {
     padding: 25px;
 }
 
-.subrayado {
-    box-shadow: 2px 3px 4px;
-    text-decoration: underline;
-    margin: 3%;
-}
+
 
 li {
     font-size: medium;
@@ -194,15 +198,26 @@ img .centrado {
     box-sizing: content-box;
     margin: 40px;
     list-style: none;
+    
 }
-
-
-p {
+div .subrayado {
+    width: 90%;
+    box-sizing: content-box;
+    text-align: center;
+    margin-left: auto;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 3px 3px 3px ;
+    text-decoration: underline;
+}
+p{
     text-transform: uppercase;
     width: 100%;
     height: auto;
     font-family: 'Open Sans', sans-serif;
+    margin: auto;
 }
+
 
 .textsam1 {
     text-align: center;
@@ -565,13 +580,13 @@ a:visited {
     background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
 }
 
-
-@media (min-width:320px) {
+@media (min-width:200px) {
     .backpage {
-        background: rgb(103, 199, 202);
-
+         background: rgb(103, 199, 202);
+         overflow: hidden;
     }
 }
+
 
 .backpagee {
     background-image: url(../img/buda.jpg);
