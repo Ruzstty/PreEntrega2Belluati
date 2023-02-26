@@ -248,9 +248,9 @@ p{
     padding: 5px;
 }
 
-@media screen and (min-device-width: 300px) {
+@media screen and (min-device-width: 500px) {
     .centrado {
-        font-size: 100%;
+        font-size: 100px;
     }
 }
 
@@ -264,13 +264,6 @@ p{
 }
 
 /* Nosotros */
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-
 
 ul li a::before {
     content: '';
