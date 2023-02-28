@@ -1,0 +1,101 @@
+.backpagee {
+    background-image: url(../img/buda.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.copy {
+    padding-top: 60px;
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+}
+
+
+
+.col-12 {
+    figure {
+        img {
+            filter: grayscale(100%);
+            filter: grayscale(100%);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+        }
+
+        &:hover {
+            img {
+                filter: grayscale(0);
+                filter: grayscale(0);
+                transform: scale( 1.1); 
+            }
+        }
+    }
+}
+
+.contenedors {
+    background-color: $background-color_1;
+    height: 30%;
+    max-width: 60%;
+    padding: 5%;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 4px;
+    font-family: $font-family_1;
+    color: $color_1;
+    box-shadow: 7px 13px 37px #000;
+
+    h1 {
+        color: $color_2;
+        text-decoration: underline;
+        font-size: 150%;
+        margin-top: 0;
+        margin-bottom: 1em;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+.boton {
+    width: 100%;
+    height: 45px;
+    margin-top: 15px;
+    border-radius: 4px;
+    border: none;
+    color: $color_1;
+    text-transform: uppercase;
+    background: linear-gradient(to left top, #005aa7, #fffde4);
+    font-size: 20px;
+
+    &:hover {
+        cursor: pointer;
+        transform: translateY(-3px);
+        transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+    }
+
+    &:active {
+        transform: translateY(3px);
+    }
+}
+
+.control {
+	width: 100%;
+	background-color: $background-color_1;
+	padding: 10px;
+	border-radius: 4px;
+	margin-bottom: 20px;
+	border: 1px solid #1f53c5;
+	font-family: $font-family_1;
+	font-size: 18px;
+	&:focus {
+		height: 60px;
+	}
+}
